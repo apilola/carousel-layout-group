@@ -1,9 +1,9 @@
 # carousel-layout-group
-![caption](.\Documentation\Showcase.gif)
+![caption](./Documentation/Showcase.gif)
 <Details>
 <Summary><b>Other Showcases<b></Summary>
 
-![caption Hello](.\Documentation\Gizmo-Example.png)
+![caption Hello](./Documentation/Gizmo-Example.png)
 ![caption Hello](.\Documentation\Customized-Formating.png)
 ![caption](.\Documentation\Screen-Shot.png)
 </Details>
