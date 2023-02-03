@@ -288,26 +288,31 @@ public class CarrouselLayoutGroup : UIBehaviour, ILayoutGroup, IScrollHandler, I
             var rMat = ConstructAngleAxis(theta * direction, Vector3.right);
             var mat = ltwMat * Matrix4x4.Translate(new Vector3(0, 0, radius)) * rMat * trsMat;
 
-            UpdateChildData(child,theta);
+            UpdateChildData(child, theta);
             child.transform.position = mat.GetPosition();
-            if(ControlChildRotation)
+            if (ControlChildRotation)
             {
                 child.transform.rotation = mat.rotation;
             }
 
-            if (Alpha)
-            {
-                var canvasGroup = child.transform.GetComponent<CanvasGroup>();
-                if (canvasGroup)
-                {
-                    var alpha = GetAlpha(theta);
-                    canvasGroup.alpha = alpha;
-                }
-            }
+            FormatChild(theta, child);
 
-            var delta = (lastSize *.5f + spacing);
+            var delta = (lastSize * .5f + spacing);
 
             theta += delta;
+        }
+    }
+
+    private void FormatChild(float theta, ChildItem child)
+    {
+        if (Alpha)
+        {
+            var canvasGroup = child.transform.GetComponent<CanvasGroup>();
+            if (canvasGroup)
+            {
+                var alpha = GetAlpha(theta);
+                canvasGroup.alpha = alpha;
+            }
         }
     }
 
