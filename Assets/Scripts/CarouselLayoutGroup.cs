@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using MovementType = UnityEngine.UI.ScrollRect.MovementType;
-public class CarrouselLayoutGroup : UIBehaviour, ILayoutGroup, IScrollHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IInitializePotentialDragHandler
+public class CarouselLayoutGroup : UIBehaviour, ILayoutGroup, IScrollHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IInitializePotentialDragHandler
 {
     float m_Velocity;
     bool m_IsDragging;
@@ -251,6 +251,7 @@ public class CarrouselLayoutGroup : UIBehaviour, ILayoutGroup, IScrollHandler, I
             }
         }
     }
+
     public void SetLayoutHorizontal()
     {
         RefreshChildren();
