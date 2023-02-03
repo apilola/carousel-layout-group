@@ -7,7 +7,9 @@
 ![caption Hello](./Documentation/Customized-Formating.png)
 ![caption](./Documentation/Screen-Shot.png)
 </Details>
+
 <Header><b>Overview</b></Header>
+
 The project contents contains the code nessesary to generate a extendable 3D carousel within Unity's UGUI system. This project provides provide the following features:
 
 - Layout Functionality
@@ -32,6 +34,7 @@ The project contents contains the code nessesary to generate a extendable 3D car
 
 
 <Header><b>Contents</b></Header>
+
 The relevant files can be located in the following directory's
 
 - CarouselLayoutGroup.cs
